@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOON.exe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: limegreen;
+      font-family: 'Share Tech Mono', monospace;
+      padding: 20px;
+      overflow: hidden;
+    }
+    #terminal {
+      white-space: pre-wrap;
+      font-size: 1.2rem;
+      height: 90vh;
+      overflow-y: auto;
+    }
+    .glitch {
+      color: red;
+      animation: glitch 0.2s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red; }
+      50% { text-shadow: -2px 0 blue; }
+      100% { text-shadow: 2px 0 red; }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal">MOON.exe initializing...\n</div>
+  <script src="moon.js"></script>
+</body>
+</html>
